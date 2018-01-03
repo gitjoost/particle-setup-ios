@@ -8,11 +8,11 @@ Pod::Spec.new do |s|
                         Particle devices (photon/P1) from within your app. Setup UI look & feel can be easily customized with custom brand
                         logos/colors/fonts/texts and instructional video. Further customization can be done by directly modifying the setup.storyboard file.
                         DESC
-    s.homepage         = "https://github.com/spark/spark-setup-ios"
+    s.homepage         = "https://github.com/particle-iot/spark-setup-ios"
     s.screenshots      = "http://i58.tinypic.com/15yhdeb.jpg"
     s.license          = 'Apache 2.0'
     s.author           = { "Particle" => "ido@particle.io" }
-    s.source           = { :git => "https://github.com/spark/particle-setup-ios.git", :tag => s.version.to_s }
+    s.source           = { :git => "https://github.com/particle-iot/particle-setup-ios.git", :tag => s.version.to_s }
     s.social_media_url = 'https://twitter.com/particle'
 
     s.platform     = :ios, '8.0'

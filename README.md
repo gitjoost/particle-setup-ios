@@ -189,7 +189,7 @@ func particleSetupViewController(controller: ParticleSetupMainController!, didFi
 
 method will be called, if `(result == ParticleSetupMainControllerResultSuccess)` or (or simply `(result == .Success)` in Swift) the device parameter will contain an active `ParticleDevice` instance you can interact with
 using the [iOS Cloud SDK](https://cocoapods.org/pods/Particle-SDK).
-In case setup failed, aborted or was cancalled  you can determine the exact reason by consulting the documentation of the enum value `ParticleSetupMainControllerResult`. See [here](https://github.com/spark/particle-setup-ios/blob/master/Classes/User/ParticleSetupMainController.h#L18-31) for additional details.
+In case setup failed, aborted or was cancalled  you can determine the exact reason by consulting the documentation of the enum value `ParticleSetupMainControllerResult`. See [here](https://github.com/particle-iot/particle-setup-ios/blob/master/Classes/User/ParticleSetupMainController.h#L18-31) for additional details.
 
 If setup failed and you can still determine the device ID of the last device that was tried to be setup and failed by conforming to the @optional delegate function: (new since 0.5.0)
 
@@ -208,8 +208,8 @@ func particleSetupViewController(controller: ParticleSetupMainController!, didNo
 
 ### Example code
 
-Cocoapods usage example app can be found [here](https://www.github.com/spark/ios-app-example-pod/).
-Carthage usage example app can be found [here](https://www.github.com/spark/ios-app-example-carthage/).
+Cocoapods usage example app can be found [here](https://www.github.com/particle-iot/ios-app-example-pod/).
+Carthage usage example app can be found [here](https://www.github.com/particle-iot/ios-app-example-carthage/).
 
 Example apps demonstrates invoking the setup wizard, customizing the UI and using the returned ParticleDevice instance once, as well as invoking Particle API functions via the Particle-SDK.
 Contributions to the example apps are welcome by submitting pull requests.
@@ -262,7 +262,7 @@ github "spark/particle-setup-ios" ~> 0.7.0
 and then run the following command:
 `carthage update --platform iOS --use-submodules --no-use-binaries`.
 
-*you can also re-use/copy the `bin/setup` shell script in your project, find it [here](https://github.com/spark/particle-setup-ios/blob/master/bin/setup)*
+*you can also re-use/copy the `bin/setup` shell script in your project, find it [here](https://github.com/particle-iot/particle-setup-ios/blob/master/bin/setup)*
 
 A new folder will be created in your project root folder - when Carthage checkout and builds are done, navigate to the `./Carthage/Build/iOS` folder and drag all the created `.framework`s files into your project in XCode.
 Go to your XCode target settings->General->Embedded binaries and press `+` and add all the `.framework` files there too - make sure the `ParticleDeviceSetupLibrary.framework`, `ParticleSDK.framework` and the `AFNetworking.framework` are listed there.
